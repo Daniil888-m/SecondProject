@@ -1,0 +1,20 @@
+.category-banner {
+  height: 180px;
+  background: rgba(93, 113, 221, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-banner__title {
+  font-weight: 450;
+  font-size: 30px;
+  line-height: 38px;
+  color: #5d71dd;
+}
