@@ -93,7 +93,6 @@ if (isIeEdge) {
 	function ibg() {
 		let ibgmages = document.querySelectorAll('._ibg');
 		for (let i = 0; i < ibgmages.length; i++) {
-			console.log('ggg');
 
 			ibgmages[i].classList.add('ibg');
 		}
@@ -122,7 +121,6 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	})
 }
-console.log(menuBody);
 
 
 const searchLink = document.querySelector('[search-link]');
@@ -130,7 +128,6 @@ const searchHeader = document.querySelector('.header-search');
 const searchHeaderClose = searchHeader.querySelector('.header-search__close');
 
 const headerSearchForm = searchHeader.querySelector('.header-search__form')
-console.log(searchHeaderClose);
 
 searchLink.addEventListener('click', function (e) {
 	e.preventDefault();
@@ -326,7 +323,6 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	const dropDownListItems = dropDownList.querySelectorAll('.dropdown__item');
 	const dropDownInput = dropDownWrapper.querySelector('.dropdown__input_hidden');
 	let itemSelected = dropDownList.querySelector('.dropdown__item[selected]');
-	console.log(itemSelected);
 
 	if (itemSelected) {
 		dropDownBtn.innerText = itemSelected.innerText;
@@ -583,10 +579,6 @@ quantities.forEach(function (quantity) {
 
 		//============================================================================
 		if (count > parseInt(quantityInput.dataset.max)) {
-			console.log(count > quantityInput.dataset.max);
-			console.log(count);
-			console.log(quantityInput.dataset.max);
-			console.log(5 > 25);
 
 
 			self.value = self.dataset.max;
